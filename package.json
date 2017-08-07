@@ -1,0 +1,19 @@
+{
+  "name": "test_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mariia",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-livereload": "^3.8.1"
+  },
+  "devDependencies": {},
+  "description": "test project"
+}

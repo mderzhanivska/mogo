@@ -1,0 +1,26 @@
+@import "reset";
+@import "fonts";
+@import "variables";
+@import "animate";
+@import "mixins";
+
+
+/* core */
+@import "core/index";
+
+
+/* common */
+@import "common/header";
+@import "common/footer";
+
+
+/* main style */
+
+body {
+
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+}
