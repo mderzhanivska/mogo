@@ -17,10 +17,81 @@
 /* main style */
 
 body {
-
+background-color: $white;
 }
 
 .container {
 	margin: 0 auto;
 	padding: 0 15px;
+	width: 1230px;
 }
+
+.col-6 {
+	width: 50%;
+}
+
+
+header {
+	background-image: url(..//img//banner.jpg);
+	background-size: 100%;
+}
+
+h2 {
+	font-family: KaushanScript-Regular;
+	font-size: 48px;
+	color: $white;
+	padding-top: 105px;
+	text-align: center;
+	margin-left: -4px;
+	letter-spacing: 1px;
+}
+
+h1 {
+	font-family: Montserrat-Bold;
+	font-size: 102px;
+	text-transform: uppercase;
+	color: $white;
+	margin-top: 19px;
+	margin-left: 300px;
+	letter-spacing: 1.2px;
+	text-align: center;
+	line-height: 100px;
+
+	width: 600px;
+}
+
+.title {
+	text-align: center;
+	h4 {
+		font-family: KaushanScript-Regular;
+	}
+	h3 {
+		font-family: Montserrat-Bold;
+		text-transform: uppercase;
+	}
+	.line-bottom {
+		display: inline;
+		padding-top: 36px;
+
+
+		&:before {
+				content: "";
+				position: absolute;
+				width: 0;
+				height: 0;
+				border-top: 2px solid $yellow;
+				border-left: 40px solid $yellow;
+			}
+	}
+
+}
+
+.content {
+	text-align: center;
+	p {
+		font-family: Roboto-Regular;
+		color: $grey;
+	}
+}
+
+
