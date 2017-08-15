@@ -1,23 +1,25 @@
-@import "reset";
-@import "fonts";
-@import "variables";
-@import "animate";
-@import "mixins";
+@import 'reset';
+@import 'fonts';
+@import 'variables';
+@import 'animate';
+@import 'mixins';
 
 
 /* core */
-@import "core/index";
+@import 'core/index';
 
 
 /* common */
-@import "common/header";
-@import "common/footer";
+@import 'common/header';
+@import 'common/footer';
 
 
 /* main style */
 
 body {
-background-color: $white;
+	background-color: $white;
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 .container {
@@ -29,11 +31,15 @@ background-color: $white;
 .col-6 {
 	width: 50%;
 }
+.col-2 {
+	width: 15%;
+}
 
 
 header {
 	background-image: url(..//img//banner.jpg);
 	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 h2 {
@@ -48,17 +54,32 @@ h2 {
 
 h1 {
 	font-family: Montserrat-Bold;
-	font-size: 102px;
 	text-transform: uppercase;
 	color: $white;
-	margin-top: 19px;
-	margin-left: 300px;
-	letter-spacing: 1.2px;
 	text-align: center;
-	line-height: 100px;
-
-	width: 600px;
 }
+h4 {
+	font-size: 23px;
+}
+h3 {
+	font-size: 32px;
+}
+
+.line-bottom {
+	display: block;
+	margin: 0 auto;
+	height: 3px;
+	width: 60px;
+	color: $yellow;
+	align: center;
+	border-bottom: 3px solid $yellow;
+
+}
+
+li {
+	font-family: Montserrat-Regular;
+}
+
 
 .title {
 	text-align: center;
@@ -68,20 +89,6 @@ h1 {
 	h3 {
 		font-family: Montserrat-Bold;
 		text-transform: uppercase;
-	}
-	.line-bottom {
-		display: inline;
-		padding-top: 36px;
-
-
-		&:before {
-				content: "";
-				position: absolute;
-				width: 0;
-				height: 0;
-				border-top: 2px solid $yellow;
-				border-left: 40px solid $yellow;
-			}
 	}
 
 }
